@@ -1,0 +1,174 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<li class="link-card">
+	<a href={href}>
+		<h2>
+			{title}
+			<span>&rarr;</span>
+		</h2>
+		<p>
+			{body}
+		</p>
+	</a>
+</li>
+<style>
+		/* Colores Primarios */
+:root {
+    --primary-green: #00c08b;
+    --white: #ffffff;
+    --dark-grey: #333333;
+    --medium-grey: #555555;
+}
+
+/* Tipografía */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--dark-grey);
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1, h2 {
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* Botones */
+.btn-custom-outline {
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-custom-outline:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+/* Navegación */
+#main-navigation {
+    background-color: var(--white);
+    padding: 10px 0;
+}
+
+#main-navigation a {
+    color: var(--dark-grey);
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#main-navigation a:hover {
+    color: var(--primary-green);
+}
+
+/* Imágenes y Contenedores */
+.content-page {
+    text-align: center;
+    padding: 20px;
+}
+
+.col-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.col-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Íconos Sociales */
+.cnss-social-icon li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.cnss-social-icon a {
+    color: var(--primary-green);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.cnss-social-icon a:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+/* Animaciones */
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeInUp {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Layout de la Página */
+.container-fluid {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media (max-width: 767.98px) {
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+</style>

@@ -37,16 +37,16 @@ const Footer = () => {
               </ul>
               <div className="flex space-x-4 mt-4 justify-center md:justify-end">
                 <a href="https://www.facebook.com/percimonhelados" target="_blank" rel="noopener noreferrer">
-                  <img src="/src/images/icons8-facebook.png" alt="Facebook" className="h-6" />
+                  <img src="/src/images/facebook.png" alt="Facebook" className="h-6" />
                 </a>
                 <a href="https://www.instagram.com/percimon/" target="_blank" rel="noopener noreferrer">
-                  <img src="/src/images/icons8-instagram.png" alt="Instagram" className="h-6" />
+                  <img src="/src/images/instagram.png" alt="Instagram" className="h-6" />
                 </a>
                 <a href="https://www.linkedin.com/company/percimon/" target="_blank" rel="noopener noreferrer">
-                  <img src="/src/images/icons8-linkedin.png" alt="LinkedIn" className="h-6" />
+                  <img src="/src/images/linkedin.png" alt="LinkedIn" className="h-6" />
                 </a>
                 <a href="https://open.spotify.com/artist/percimon" target="_blank" rel="noopener noreferrer">
-                  <img src="/src/images/icons8-spotify.png" alt="Spotify" className="h-6" />
+                  <img src="/src/images/spotify.png" alt="Spotify" className="h-6" />
                 </a>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Botón de WhatsApp */}
         <div className="fixed bottom-4 right-4">
           <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-            <img src="/src/images/icons8-whatsapp-64.png" alt="WhatsApp" className="h-12" />
+            <img src="/src/images/whatsapp-64.png" alt="WhatsApp" className="h-12" />
           </a>
         </div>
       </div>
